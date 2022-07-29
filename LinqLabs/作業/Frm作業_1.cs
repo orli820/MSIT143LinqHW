@@ -21,14 +21,22 @@ namespace MyHomeWork
             this.productsTableAdapter2.Fill(nDataSet11.Products);
 
 
+            Random rd = new Random(1000);
+            for (int i = 0; i < 1000; i++)
+            {
+                int x = rd.Next(0, 100);
+            }
+
+
             students_scores = new List<Students>()
                                          {
-                                            new Students{ Name = "aaa", Class = "CS_101", Chi = 80, Eng = 80, Math = 50, Gender = "Male" },
-                                            new Students{ Name = "bbb", Class = "CS_102", Chi = 80, Eng = 80, Math = 100, Gender = "Male" },
-                                            new Students{ Name = "ccc", Class = "CS_101", Chi = 60, Eng = 50, Math = 75, Gender = "Female" },
-                                            new Students{ Name = "ddd", Class = "CS_102", Chi = 80, Eng = 70, Math = 85, Gender = "Female" },
-                                            new Students{ Name = "eee", Class = "CS_101", Chi = 80, Eng = 80, Math = 50, Gender = "Female" },
-                                            new Students{ Name = "fff", Class = "CS_102", Chi = 80, Eng = 80, Math = 80, Gender = "Female" },
+                                            new Students { Name = "廖家毅", Class = "CS_101", Chi = x, Eng = x, Math = x, Gender = "Male" },
+                                            new Students { Name = "鄭凱", Class = "CS_102", Chi = x, Eng = x, Math = x, Gender = "Male" },
+                                            new Students { Name = "李沛軒", Class = "CS_102", Chi = x, Eng = x, Math = x, Gender = "Male" },
+                                            new Students { Name = "陳苡錚", Class = "CS_101", Chi = x, Eng = x, Math = x, Gender = "Female" },
+                                            new Students { Name = "王婷薇", Class = "CS_102", Chi = x, Eng = x, Math = x, Gender = "Female" },
+                                            new Students { Name = "洪暐婷", Class = "CS_101", Chi = x, Eng = x, Math = x, Gender = "Female" },
+                                            new Students { Name = "游曉雯", Class = "CS_102", Chi = x, Eng = x, Math = x, Gender = "Female" },
 
                                           };
         }

@@ -16,3 +16,4 @@ namespace LinqLabs.作業
         public string Gender { get; set; }
     }
 }
+   
